@@ -8,8 +8,7 @@ JavaScript outside the browser.
 * "Blogger" since before PeterMe coined the term.
 * Bit pusher - video codecs, embedded devices, etc.
 
-== Why JavaScript sucks and why you should use it across your entire
-tool stack ==
+== Why JavaScript sucks and why you should use it everywhere ==
 
 == Why JavaScript sucks ==
 
@@ -23,7 +22,7 @@ tool stack ==
 * Cross-platform client+local-server apps
 * Deployed more places than Java
 * Asm.js - VM of the future
-* Security is scary
+* Security is scary, browsers are everywhere.
 
 == MVC Architecture ==
 
@@ -75,6 +74,8 @@ Less silly examples:
 * Reduce the world to 4 operations
 * A note on item potency
 
+== Application in the Browser ==
+
 == Sharing model constraints with the application ==
 
 * Password policy
@@ -88,20 +89,27 @@ Less silly examples:
 
 == Nodejs - command line and server JavaScript ==
 
-* Hello, World
+* Hello, World: console.log("Hello, World");
 * Autocomplete
-* 
+
+== Nodejs - testing frameworks
+
+* mocha
+
 
 == Do I have to write in JavaScript? ==
 
 * Coffeescript
 * ActionScript
-* DartJS
-* C++
+* C++/emscripten/clang
 
 == Standing on the feet of giants ==
 
 * Meteor
 * Ember
 * Bla bla bla
+
+== Other technology of note ==
+
+* OS/X jsc
 
