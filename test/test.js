@@ -1,5 +1,5 @@
 var assert = require("assert");
-var common = require('./commonfunc.js');
+var common = require('../commonfunc.js');
 
 describe('common', function(){
     describe('#doubleIt()', function() {
