@@ -10,6 +10,12 @@ app.get('/', function(page) {
   page.render('home');
 });
 
+app.get('/dbl', function(page, model, params, next) {
+            page.render('dbl');
+//            model.subscribe('hello.message', function() {
+//                            });
+});
+
 app.get('/list', function(page, model, params, next) {
   // This value is set on the server in the `createUserId` middleware
   var userId = model.get('_session.userId');
