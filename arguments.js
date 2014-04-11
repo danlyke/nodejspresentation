@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // print process.arg
 var common = require('./commonfunc.js');
 
