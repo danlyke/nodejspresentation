@@ -92,16 +92,27 @@ Less silly examples:
 * Hello, World: console.log("Hello, World");
 * Autocomplete
 
+== npm - Node Package Manager
+
+* jshint
+
+
 == Nodejs - testing frameworks
 
 * mocha
 
+== Nodejs - server ==
+
+A computer is a state machine. Threads are for people who can't
+program state machines.  Alan Cox
 
 == Do I have to write in JavaScript? ==
 
 * Coffeescript
 * ActionScript
 * C++/emscripten/clang
+
+* jshint
 
 == Standing on the feet of giants ==
 
