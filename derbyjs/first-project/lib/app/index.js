@@ -6,8 +6,10 @@ var app = require('derby').createApp(module)
 // ROUTES //
 
 // Derby routes are rendered on the client and the server
-app.get('/', function(page) {
-  page.render('home');
+app.get('/', function(page, model) {
+    model.subscribe('hello.message', function() {
+        page.render('home');
+    });
 });
 
 app.get('/list', function(page, model, params, next) {
