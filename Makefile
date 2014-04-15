@@ -3,8 +3,12 @@ all:
 	node hello2.js
 	perl callnode.pl
 
-test:
-	mocha
+slides:
+	landslide presentation.md
+
+test :
+	jshint commonfunc.js
+	mocha tests
 
 deploy:
 	mocha
