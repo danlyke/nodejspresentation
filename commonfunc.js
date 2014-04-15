@@ -5,7 +5,7 @@
         it = Number(it);
         return it + it;
     };
-})((typeof process === 'undefined' || !process.versions)
-   ? window.common = window.common || {}
+})((typeof process === 'undefined' || !process.versions) ?
+   window.common = window.common || {}
    : exports);
 
