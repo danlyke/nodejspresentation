@@ -1,12 +1,12 @@
 
-
+1
 # Nodejs
 
-JavaScript outside the browser.
+# JavaScript outside the browser.
 
 ---
 
-# Dan Lyke
+## Dan Lyke
 
 - HYPER! HTML browser circa 1993
 - "Blogger" since before PeterMe coined the term.
@@ -14,11 +14,13 @@ JavaScript outside the browser.
 
 ---
 
-# Why JavaScript sucks and why you should use it everywhere
+## Why JavaScript sucks and ...
 
----
+Greenspun's Tenth Rule:
 
-# Why JavaScript sucks
+<blockquote>Any sufficiently complicated C or Fortran program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.</blockquote>
+
+aka JavaScript
 
 - Bad language features: comparisons, semicolons, ambiguity
 - No typing
@@ -27,7 +29,9 @@ JavaScript outside the browser.
 
 ---
 
-# Why JavaScript is the future
+## and why you should use it everywhere
+
+It's already everywhere.
 
 - Cross-platform client+local-server apps
 - Deployed more places than Java
@@ -36,35 +40,36 @@ JavaScript outside the browser.
 
 ---
 
-# MVC Architecture
+## MVC Architecture
 
+<img src="diagrams/MCV.svg" align="right">
 - How we think about applications
 - Multiple windows on the same data
 - Single data store
 
 ---
 
-# View
+## View
 
 - View knows how to display stuff
 
 ---
 
-# Controller
+## Controller
 
 - Controller aggregates changes & distributes to views
 
 ---
 
-# Model
+## Model
 
 - Data Store + Business rules
 - "Real" enterprises often do this in SQL
-- X is not a database
+- "[X] is not a database"
 
 ---
 
-# Business Rules
+## Business Rules
 
 A few silly examples:
 
@@ -80,14 +85,18 @@ Less silly examples:
 
 ---
 
-# M->C->C->V Architecture
+## M->C->C->V Architecture
+
+<img src="diagrams/MCCV.svg" align="right">
 
 - Web apps may need controllers (on servers) talking to controllers
   (in browsers).
 
 ---
 
-# Datastore->Ms->C->C->V
+## Datastore->Ms->C->C->V
+
+<img src="diagrams/MMCCVV.svg" align="right">
 
 - Central atomic data store
 - Multiple replicated data stores
@@ -95,25 +104,24 @@ Less silly examples:
 
 ---
 
-# C->M : CRUD
+## Application in the Browser
 
-- Reduce the world to 4 operations
-- A note on item potency
-
----
-
-# Application in the Browser
+- Minimize round-trips
+- Avoid re-sending lots of HTML, just JSON
+- Became the dominant mode, then abandoned (Twitter, etc).
+- Same templates server and browser side, hybrid solutions.
 
 ---
 
-# Sharing model constraints with the application
+## Sharing model constraints
 
-- Password policy
-- Other API constraints
+- Can't depend on the client to abide by constraints.
+- Don't want to duplicate code.
+- Especially don't want divergent code (different regex engines, etc)
 
 ---
 
-# Test Driven Development
+## Test Driven Development
 
 - "make && make test && make deploy"
 - Hard to do if tests involve human interaction.
@@ -121,7 +129,7 @@ Less silly examples:
 
 ---
 
-# Nodejs - command line and server JavaScript
+## Nodejs - command line and server JavaScript
 
 - Hello, World: console.log("Hello, World");
 - Autocomplete
@@ -130,7 +138,7 @@ node helloworld.js
 
 ---
 
-# Common use of libraries
+## Common use of libraries
 
 - commonfunc.js builds an export table
 - clientfile.html runs it in the browser
@@ -138,7 +146,7 @@ node helloworld.js
 
 ---
 
-# Testing
+## Testing
 
 test/test.js
 
@@ -147,21 +155,25 @@ test/test.js
 
 ---
 
-# npm - Node Package Manager
+## npm - Node Package Manager
 
 - -g to install globally, people like local installation
 - also runs packages.
 
 ---
 
-# Nodejs - server
+## Nodejs - server
 
 A computer is a state machine. Threads are for people who can't
 program state machines.  Alan Cox
 
+- event-driven
+- easy to combine server types
+- lots of functionality layering
+
 ---
 
-# Standing on the feet of giants
+## Standing on the feet of giants
 
 - ShareJS
 - LiveDB
@@ -171,7 +183,7 @@ program state machines.  Alan Cox
 
 ---
 
-# Derby demo
+## Derby demo
 
 - cd derbyjs/first-project
 - npm start
@@ -179,22 +191,26 @@ program state machines.  Alan Cox
 
 ---
 
-# Derby vs Meteor
+## Derby vs Meteor
 
 - Meteor: GPL, own package manager, "Fibers"
 - Derby: MIT, npm, callbacks
 
 ---
 
-# Do I have to write in JavaScript?
+## Do I have to write in JavaScript?
 
 - Coffeescript
 - ActionScript
-- C++/emscripten/clang
+- C++/emscripten/clang/LLVM
+- LLVM means ActionScript, Ada, D, Fortran, OpenGL Shading Language,
+  Haskell, Julia, Objective-C, Python, Ruby, Rust,
+  Scala
+- parenscript
 
 ---
 
-# Other technology of note
+## Other technology of note
 
 - OS/X jsc
 
