@@ -7,7 +7,7 @@ slides:
 	landslide presentation.md
 
 test :
-	jshint commonfunc.js
+	jshint *.js
 	mocha tests
 
 deploy:
