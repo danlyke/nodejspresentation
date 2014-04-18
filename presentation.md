@@ -1,5 +1,4 @@
 
-1
 # Nodejs
 
 # JavaScript outside the browser.
@@ -14,7 +13,7 @@
 
 ---
 
-## Why JavaScript sucks and ...
+## Why JavaScript sucks ...
 
 Greenspun's Tenth Rule:
 
@@ -29,7 +28,7 @@ aka JavaScript
 
 ---
 
-## and why you should use it everywhere
+## and why you should use it.
 
 It's already everywhere.
 
@@ -43,29 +42,18 @@ It's already everywhere.
 ## MVC Architecture
 
 <img src="diagrams/MCV.svg" align="right">
+
 - How we think about applications
 - Multiple windows on the same data
 - Single data store
 
 ---
 
-## View
+## MVC condensed
 
 - View knows how to display stuff
-
----
-
-## Controller
-
 - Controller aggregates changes & distributes to views
-
----
-
-## Model
-
-- Data Store + Business rules
-- "Real" enterprises often do this in SQL
-- "[X] is not a database"
+- Model is the Data Store + Business rules: "Real" enterprises often do this in SQL
 
 ---
 
@@ -82,6 +70,14 @@ Less silly examples:
 - Rental policies
 - Discount conditions
 - CRM
+
+---
+
+## (No)SQL does not make a database
+
+Or at least doesn't make a model.
+
+- "[X] is not a database" for [X] in MySQL, MongoDB, etc...
 
 ---
 
@@ -111,9 +107,13 @@ Less silly examples:
 - Became the dominant mode, then abandoned (Twitter, etc).
 - Same templates server and browser side, hybrid solutions.
 
+Hybrid solutions render HTML, send that HTML across along with enough
+JavaScript to use that HTML as a template. This gives super fast
+initial page rendering, and then allows JSON thereafter.
+
 ---
 
-## Sharing model constraints
+## Sharing Model constraints
 
 - Can't depend on the client to abide by constraints.
 - Don't want to duplicate code.
@@ -129,10 +129,13 @@ Less silly examples:
 
 ---
 
-## Nodejs - command line and server JavaScript
+## Nodejs - JS command line and server
 
 - Hello, World: console.log("Hello, World");
 - Autocomplete
+
+Run "node", it gives you a prompt, type "console.", hit tab, *boom*,
+list of methods to the console object.
 
 node helloworld.js
 
@@ -146,12 +149,67 @@ node helloworld.js
 
 ---
 
+## commonfunc.js
+
+<pre>(function(exports) {
+ 
+// Define all your functions on the exports object
+    exports.doubleIt = function(it) {
+        it = Number(it);
+        return it + it;
+    };
+})((typeof process === 'undefined' || !process.versions) ?
+   window.common = window.common || {}
+   : exports);
+</pre>
+
+---
+
+## use it from places
+
+HTML:
+
+<pre>&lt;html&gt;&lt;head&gt; 
+&lt;script src="commonfunc.js"&gt;&lt;/script&gt;
+&lt;/head&gt;&lt;body&gt;
+ &lt;script&gt;
+var it = 2;
+alert("Doubing "+it+" yields " + window.common.doubleIt(2));
+&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;</pre>
+
+Or console JavaScript:
+
+<pre>var common = require('./commonfunc.js');
+console.log("Doubling 2 to get " + common.doubleIt(2));
+</pre>
+
+---
+
 ## Testing
 
 test/test.js
 
 - jshint lints it
 - mocha tests it.
+
+<pre>var assert = require("assert");
+var common = require('../commonfunc.js');
+
+describe('common', function(){
+    describe('#doubleIt()', function() {
+        it('should return 4 when called with 2',
+           function() { assert.equal(4, common.doubleIt(2)) } );
+        it('should return 2 when called with 1',
+           function() { assert.equal(2, common.doubleIt(1)) } );
+        it('should return 3 when called with 1.5',
+           function() { assert.equal(3, common.doubleIt(1.5)) } );
+        it('should return 10 when called with 5',
+           function() { assert.equal(10, common.doubleIt("5")) } );
+    })
+});
+</pre>
+
 
 ---
 
@@ -173,10 +231,34 @@ program state machines.  Alan Cox
 
 ---
 
+## HTTP server
+
+
+<pre>var http = require('http');
+
+var server = http.createServer(function (request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.end("Hello World\n");
+});
+server.listen(8000);
+</pre>
+
+---
+
+## HTTP server with a router
+
+<pre>var server = require('node-router').getServer();
+server.get("/", function (request, response) {
+  response.simpleText(200, "Hello World!");
+});
+server.listen(8000, "localhost");
+</pre>
+
 ## Standing on the feet of giants
 
 - ShareJS
 - LiveDB
+- Derby
 - Meteor
 - Ember
 - Bla bla bla
@@ -187,7 +269,11 @@ program state machines.  Alan Cox
 
 - cd derbyjs/first-project
 - npm start
+- http://127.0.0.1:3000/
+- Changes in one field show up in all other fields on all other browsers!
 - emacs views/app/home.html lib/app/index.js 
+- Saving home.html updates the browser too.
+
 
 ---
 
@@ -206,6 +292,7 @@ program state machines.  Alan Cox
 - LLVM means ActionScript, Ada, D, Fortran, OpenGL Shading Language,
   Haskell, Julia, Objective-C, Python, Ruby, Rust,
   Scala
+- C means Python, Unreal, 
 - parenscript
 
 ---
