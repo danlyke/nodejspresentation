@@ -152,6 +152,14 @@ test/test.js
 
 - jshint lints it
 - mocha tests it.
+- Integrate into deployment, ie in Makefile:
+
+<pre>deploy: ...
+	jshint *.js
+	mocha tests
+    rsync ... remote@server:/path/to/project
+    ...
+</pre>
 
 ---
 
@@ -170,6 +178,65 @@ program state machines.  Alan Cox
 - event-driven
 - easy to combine server types
 - lots of functionality layering
+
+---
+
+## RPC servers
+
+<pre>// Load the TCP Library
+net = require('net');
+var common = require('./commonfunc.js');
+
+// Start a TCP Server
+net.createServer(
+    function (socket) 
+    {
+        socket.on('data',
+                  function(data)
+                  {
+                      var s = "" + data;
+                      socket.write(common.doubleIt(s.replace("\n",""))
+                                   + "\n");
+                      
+                  });
+    }
+).listen(5000)</pre>
+
+---
+
+## HTML servers
+
+<pre>## RPC servers
+
+<pre>// Load the TCP Library
+net = require('net');
+var common = require('./commonfunc.js');
+
+// Start a TCP Server
+net.createServer(
+    function (socket) 
+    {
+        socket.on('data',
+                  function(data)
+                  {
+                      var s = "" + data;
+                      socket.write(common.doubleIt(s.replace("\n",""))
+                                   + "\n");
+                      
+                  });
+    }
+).listen(5000)</pre>
+
+---
+
+## HTML servers
+
+<pre>var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+</pre>
 
 ---
 
@@ -206,6 +273,7 @@ program state machines.  Alan Cox
 - LLVM means ActionScript, Ada, D, Fortran, OpenGL Shading Language,
   Haskell, Julia, Objective-C, Python, Ruby, Rust,
   Scala
+- C means ... well ... pretty much anything.
 - parenscript
 
 ---
