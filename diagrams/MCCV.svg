@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="321.53128"
+   height="385.84921"
+   viewBox="37 27 177.51653 209.7666"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="MCCV.svg">
+  <metadata
+     id="metadata136">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs134" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview132"
+     showgrid="false"
+     inkscape:zoom="0.35054971"
+     inkscape:cx="281.782"
+     inkscape:cy="-53.27868"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2"
+     fit-margin-top="10"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="g4"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <path
+       style="fill:#ffffff"
+       d="M 130.429,29 262.571,29 289,105 262.571,181 130.429,181 104,105 130.429,29 z"
+       id="path6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2"
+       d="M 130.429,29 262.571,29 289,105 262.571,181 130.429,181 104,105 130.429,29"
+       id="path8"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="196.5"
+       y="109"
+       id="text10">
+      <tspan
+         x="196.5"
+         y="109"
+         id="tspan12" />
+    </text>
+  </g>
+  <g
+     id="g14"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="140"
+       y="56"
+       width="115"
+       height="38"
+       id="rect16" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="140"
+       y="56"
+       width="115"
+       height="38"
+       id="rect18" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="197.5"
+       y="78.900002"
+       id="text20">
+      <tspan
+         x="197.5"
+         y="78.900002"
+         id="tspan22">Model</tspan>
+    </text>
+  </g>
+  <g
+     id="g24"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x1="198.213"
+       y1="166.571"
+       x2="197.08701"
+       y2="224.52901"
+       id="line26" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="203.061,174.431 198.257,164.336 193.063,174.237 "
+       id="polyline28" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="192.239,216.669 197.043,226.764 202.237,216.863 "
+       id="polyline30" />
+  </g>
+  <g
+     id="g32"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="144.3"
+       y="124.1"
+       width="108"
+       height="38"
+       id="rect34" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="144.3"
+       y="124.1"
+       width="108"
+       height="38"
+       id="rect36" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="198.3"
+       y="147"
+       id="text38">
+      <tspan
+         x="198.3"
+         y="147"
+         id="tspan40">Controller</tspan>
+    </text>
+  </g>
+  <g
+     id="g42"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x1="198.181"
+       y1="119.629"
+       x2="197.619"
+       y2="98.470596"
+       id="line44" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="192.977,112.001 198.241,121.865 202.973,111.735 "
+       id="polyline46" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="202.823,106.099 197.559,96.2353 192.827,106.365 "
+       id="polyline48" />
+  </g>
+  <g
+     id="g50"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <path
+       style="fill:#ffffff"
+       d="m 83.2857,213.1 221.4283,0 L 349,302.55 304.714,392 83.2857,392 39,302.55 83.2857,213.1 z"
+       id="path52"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2"
+       d="m 83.2857,213.1 221.4283,0 L 349,302.55 304.714,392 83.2857,392 39,302.55 83.2857,213.1"
+       id="path54"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="194"
+       y="306.54999"
+       id="text56">
+      <tspan
+         x="194"
+         y="306.54999"
+         id="tspan58" />
+    </text>
+  </g>
+  <g
+     id="g60"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="143"
+       y="229"
+       width="108"
+       height="38"
+       id="rect62" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="143"
+       y="229"
+       width="108"
+       height="38"
+       id="rect64" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="197"
+       y="251.89999"
+       id="text66">
+      <tspan
+         x="197"
+         y="251.89999"
+         id="tspan68">Controller</tspan>
+    </text>
+  </g>
+  <g
+     id="g70"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="75"
+       y="310"
+       width="70"
+       height="38"
+       id="rect72" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="75"
+       y="310"
+       width="70"
+       height="38"
+       id="rect74" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="110"
+       y="332.89999"
+       id="text76">
+      <tspan
+         x="110"
+         y="332.89999"
+         id="tspan78">View</tspan>
+    </text>
+  </g>
+  <g
+     id="g80"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="163.3"
+       y="310.10001"
+       width="70"
+       height="38"
+       id="rect82" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="163.3"
+       y="310.10001"
+       width="70"
+       height="38"
+       id="rect84" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="198.3"
+       y="333"
+       id="text86">
+      <tspan
+         x="198.3"
+         y="333"
+         id="tspan88">View</tspan>
+    </text>
+  </g>
+  <g
+     id="g90"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <rect
+       style="fill:#ffffff"
+       x="247.60001"
+       y="309.20001"
+       width="70"
+       height="38"
+       id="rect92" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x="247.60001"
+       y="309.20001"
+       width="70"
+       height="38"
+       id="rect94" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+       x="282.60001"
+       y="332.10001"
+       id="text96">
+      <tspan
+         x="282.60001"
+         y="332.10001"
+         id="tspan98">View</tspan>
+    </text>
+  </g>
+  <g
+     id="g100"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x1="197.13499"
+       y1="271.47"
+       x2="198.16499"
+       y2="305.63"
+       id="line102" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="202.367,279.08 197.067,269.235 192.371,279.381 "
+       id="polyline104" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="192.933,298.02 198.233,307.865 202.929,297.719 "
+       id="polyline106" />
+  </g>
+  <g
+     id="g108"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x1="166.36501"
+       y1="269.60501"
+       x2="113.635"
+       y2="307.39499"
+       id="line110" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="162.967,278.192 168.182,268.303 157.142,270.064 "
+       id="polyline112" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="117.033,298.808 111.818,308.697 122.858,306.936 "
+       id="polyline114" />
+  </g>
+  <g
+     id="g116"
+     transform="matrix(0.56850768,0,0,0.56850768,15.467772,14.930675)">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:2"
+       x1="228.61099"
+       y1="270.60001"
+       x2="278.96201"
+       y2="306.599"
+       id="line118" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="237.834,271.048 226.792,269.3 232.018,279.183 "
+       id="polyline120" />
+    <polyline
+       style="fill:none;stroke:#000000;stroke-width:2"
+       points="269.738,306.151 280.781,307.9 275.554,298.016 "
+       id="polyline122" />
+  </g>
+  <text
+     font-size="12.7998"
+     style="font-size:7.27678442px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+     x="117.23064"
+     y="41.082024"
+     id="text124">
+    <tspan
+       x="117.23064"
+       y="41.082024"
+       id="tspan126">Server</tspan>
+  </text>
+  <text
+     font-size="12.7998"
+     style="font-size:7.27678442px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+     x="114.38811"
+     y="230.3951"
+     id="text128">
+    <tspan
+       x="114.38811"
+       y="230.3951"
+       id="tspan130">Browser</tspan>
+  </text>
+</svg>

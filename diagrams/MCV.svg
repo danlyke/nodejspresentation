@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="13cm" height="10cm" viewBox="54 114 245 196" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="118" y="115" width="115" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="118" y="115" width="115" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="175.5" y="137.9">
+      <tspan x="175.5" y="137.9">Model</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="123" y="189" width="108" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="123" y="189" width="108" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="177" y="211.9">
+      <tspan x="177" y="211.9">Controller</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="55" y="270" width="70" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="55" y="270" width="70" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="90" y="292.9">
+      <tspan x="90" y="292.9">View</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="143.3" y="270.1" width="70" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="143.3" y="270.1" width="70" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="178.3" y="293">
+      <tspan x="178.3" y="293">View</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="227.6" y="269.2" width="70" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="227.6" y="269.2" width="70" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="262.6" y="292.1">
+      <tspan x="262.6" y="292.1">View</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="177.135" y1="231.47" x2="178.165" y2="265.63"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="182.367,239.08 177.067,229.235 172.371,239.381 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="172.933,258.02 178.233,267.865 182.929,257.719 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="146.365" y1="229.605" x2="93.635" y2="267.395"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="142.967,238.192 148.182,228.303 137.142,230.064 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="97.0331,258.808 91.8175,268.697 102.858,266.936 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="208.611" y1="230.6" x2="258.962" y2="266.599"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="217.834,231.048 206.792,229.3 212.018,239.183 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="249.738,266.151 260.781,267.9 255.554,258.016 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="175.686" y1="157.468" x2="176.814" y2="184.532"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="181.005,165.017 175.593,155.234 171.014,165.434 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="171.495,176.983 176.907,186.766 181.486,176.566 "/>
+  </g>
+</svg>
