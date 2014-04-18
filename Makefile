@@ -5,6 +5,8 @@ all:
 
 slides:
 	landslide presentation.md
+	rsync -avz themes /home/danlyke/websites/flutterby.net/public_html_static/jspreso/
+	perl -e 'while (<>) { s%file:///usr/lib/python2.7/dist-packages/landslide/landslide/%%g; print }' <  presentation.html > /home/danlyke/websites/flutterby.net/public_html_static/jspreso/presentation.html
 
 test :
 	jshint *.js
@@ -13,5 +15,5 @@ test :
 deploy:
 	mocha
 	echo "Okay, now I'm copying your stuff to the server"
-	mkdikr -p /home/danlyke/websites/flutterby.net/public_html_static/jspreso
+	mkdir -p /home/danlyke/websites/flutterby.net/public_html_static/jspreso
 	cp clientfile.html commonfunc.js /home/danlyke/websites/flutterby.net/public_html_static/jspreso
