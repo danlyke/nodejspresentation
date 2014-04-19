@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  font: 28px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
   background: #778;
   padding: 0;
   margin: 0;
@@ -235,7 +235,7 @@ div.slide div.presenter_notes, div.slides div.presenter_notes {
 /* Slide styles */
 
 div.slide p {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .slide.far-past {
@@ -275,7 +275,7 @@ body.three-d div.slides {
 header:not(:only-child) {
   font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 64px;
   letter-spacing: -.05em;
   color: black;
   text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
@@ -338,13 +338,13 @@ a {
 }
 
 pre {
-  font-size: 16px;
+  font-size: 32px;
   font-family: Monaco, Courier, monospace;
 }
 
 li {
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .slide header:only-child h1 {
@@ -354,7 +354,7 @@ li {
   vertical-align: middle;
   height: 700px;
   width: 900px;
-  font-size: 50px;
+  font-size: 64px;
   margin-top:100px;
   margin-bottom:100px;
 }
