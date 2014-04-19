@@ -73,11 +73,15 @@ Less silly examples:
 
 ---
 
-## (No)SQL does not make a database
+## [X] is not a database
 
 Or at least doesn't make a model.
 
-- "[X] is not a database" for [X] in MySQL, MongoDB, etc...
+- MySQL is not a database
+- MongoDB is not a database
+- Excel is not a database
+  (but you knew that)
+- Get off my lawn
 
 ---
 
@@ -129,7 +133,7 @@ initial page rendering, and then allows JSON thereafter.
 
 ---
 
-## Nodejs - JS command line and server
+## Nodejs - stand-alone JavaScript
 
 - Hello, World: console.log("Hello, World");
 - Autocomplete
@@ -153,19 +157,21 @@ node helloworld.js
 
 <pre>(function(exports) {
  
-// Define all your functions on the exports object
+// Define all your functions on the
+// exports object
     exports.doubleIt = function(it) {
         it = Number(it);
         return it + it;
     };
-})((typeof process === 'undefined' || !process.versions) ?
+})((typeof process === 'undefined'
+    || !process.versions) ?
    window.common = window.common || {}
    : exports);
 </pre>
 
 ---
 
-## use it from places
+## use it from HTML
 
 HTML:
 
@@ -178,15 +184,19 @@ alert("Doubing "+it+" yields " + window.common.doubleIt(2));
 &lt;/script&gt;
 &lt;/body&gt;&lt;/html&gt;</pre>
 
-Or console JavaScript:
+
+---
+
+## Use it server side
 
 <pre>var common = require('./commonfunc.js');
-console.log("Doubling 2 to get " + common.doubleIt(2));
+console.log("Doubling 2 to get "
+            + common.doubleIt(2));
 </pre>
 
 ---
 
-## Testing
+## Test it
 
 test/test.js
 
@@ -201,19 +211,23 @@ test/test.js
     ...
 </pre>
 
+---
+
+## Write tests
+
 <pre>var assert = require("assert");
 var common = require('../commonfunc.js');
 
 describe('common', function(){
-    describe('#doubleIt()', function() {
-        it('should return 4 when called with 2',
-           function() { assert.equal(4, common.doubleIt(2)) } );
-        it('should return 2 when called with 1',
-           function() { assert.equal(2, common.doubleIt(1)) } );
-        it('should return 3 when called with 1.5',
-           function() { assert.equal(3, common.doubleIt(1.5)) } );
-        it('should return 10 when called with 5',
-           function() { assert.equal(10, common.doubleIt("5")) } );
+ describe('#doubleIt()', function() {
+   it('should return 4 when called with 2',
+     function()
+     { 
+       assert.equal(4, common.doubleIt(2))
+     } );
+
+    // and so forth ...
+
     })
 });
 </pre>
@@ -247,18 +261,15 @@ var common = require('./commonfunc.js');
 
 // Start a TCP Server
 net.createServer(
-    function (socket) 
-    {
-        socket.on('data',
-                  function(data)
-                  {
-                      var s = "" + data;
-                      socket.write(common.doubleIt(s.replace("\n",""))
-                                   + "\n");
-                      
-                  });
-    }
-).listen(5000)</pre>
+  function (socket) 
+  {
+    socket.on('data',
+      function(data)
+      { var s = "" + data;
+        socket.write(
+          common.doubleIt(s.replace("\n",""))
+          + "\n"); });
+  }).listen(5000)</pre>
 
 ---
 
@@ -289,20 +300,23 @@ server.listen(8000);
 
 ## HTTP server with a router
 
-<pre>var server = require('node-router').getServer();
-server.get("/", function (request, response) {
+<pre>var server =
+   require('node-router').getServer();
+server.get("/",
+  function (request, response) {
   response.simpleText(200, "Hello World!");
 });
 server.listen(8000, "localhost");
 </pre>
 
+---
+
 ## Standing on the feet of giants
 
-- ShareJS
-- LiveDB
+- ShareJS - live concurrent editing
+- LiveDB - database joiner/controller
 - Derby
 - Meteor
-- Ember
 - Bla bla bla
 
 ---
@@ -342,4 +356,16 @@ server.listen(8000, "localhost");
 ## Other technology of note
 
 - OS/X jsc
+
+
+---
+
+## Questions?
+
+- nodejs.org
+- derbyjs.com
+
+
+danlyke@flutterby.com
+http://www.flutterby.net/User:DanLyke
 
