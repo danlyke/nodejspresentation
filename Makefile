@@ -1,3 +1,5 @@
+TARGETDIR = /home/danlyke/websites/flutterby.net/public_html_static/jspreso/
+
 all:
 	node helloworld.js
 	node hello2.js
@@ -5,8 +7,9 @@ all:
 
 slides:
 	landslide presentation.md
-	rsync -avz themes /home/danlyke/websites/flutterby.net/public_html_static/jspreso/
-	perl -e 'while (<>) { s%file:///usr/lib/python2.7/dist-packages/landslide/landslide/%%g; print }' <  presentation.html > /home/danlyke/websites/flutterby.net/public_html_static/jspreso/presentation.html
+	rsync -avz themes $(TARGETDIR)
+	rsync -avz diagrams $(TARGETDIR)
+	perl -e 'while (<>) { s%file:///usr/lib/python2.7/dist-packages/landslide/landslide/%%g; print }' <  presentation.html > $(TARGETDIR)presentation.html
 
 test :
 	jshint *.js
