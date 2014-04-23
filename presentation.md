@@ -21,9 +21,16 @@ Greenspun's Tenth Rule:
 
 aka JavaScript
 
+<img src="./diagrams/JavaScriptGoodPartsVsDefinitiveGuide.jpg">
+
+---
+
+## Why JavaScript sucks ...
+
 - Bad language features: comparisons, semicolons, ambiguity
 - No typing
 - Blurs content and presentation in horrible ways
+- Testing and debugging are hard
 - Get off my lawn
 
 ---
@@ -104,19 +111,6 @@ Or at least doesn't make a model.
 
 ---
 
-## Application in the Browser
-
-- Minimize round-trips
-- Avoid re-sending lots of HTML, just JSON
-- Became the dominant mode, then abandoned (Twitter, etc).
-- Same templates server and browser side, hybrid solutions.
-
-Hybrid solutions render HTML, send that HTML across along with enough
-JavaScript to use that HTML as a template. This gives super fast
-initial page rendering, and then allows JSON thereafter.
-
----
-
 ## Sharing Model constraints
 
 - Can't depend on the client to abide by constraints.
@@ -187,7 +181,7 @@ alert("Doubing "+it+" yields " + window.common.doubleIt(2));
 
 ---
 
-## Use it server side
+## From the command-line
 
 <pre>var common = require('./commonfunc.js');
 console.log("Doubling 2 to get "
@@ -313,11 +307,26 @@ server.listen(8000, "localhost");
 
 ## Standing on the feet of giants
 
+- Express
+- Anyauth
 - ShareJS - live concurrent editing
 - LiveDB - database joiner/controller
 - Derby
 - Meteor
 - Bla bla bla
+
+---
+
+## Application in the Browser
+
+- Minimize round-trips
+- Avoid re-sending lots of HTML, just JSON
+- Became the dominant mode, then abandoned (Twitter, etc).
+- Same templates server and browser side, hybrid solutions.
+
+Hybrid solutions render HTML, send that HTML across along with enough
+JavaScript to use that HTML as a template. This gives super fast
+initial page rendering, and then allows JSON thereafter.
 
 ---
 
@@ -335,8 +344,15 @@ server.listen(8000, "localhost");
 
 ## Derby vs Meteor
 
-- Meteor: GPL, own package manager, "Fibers"
-- Derby: MIT, npm, callbacks
+- Meteor: GPL, own package manager, "Fibers", shakey security
+- Derby: MIT, npm, callbacks, some support for JavaScript-less HTML (helloo accessibility!)
+
+---
+
+## So not quite there yet
+
+Other languages have fully-formed frameworks and content management
+systems, Node has some components upon which you can hang an app.
 
 ---
 
