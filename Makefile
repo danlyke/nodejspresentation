@@ -9,7 +9,7 @@ slides:
 	landslide presentation.md
 	rsync -avz themes $(TARGETDIR)
 	rsync -avz diagrams $(TARGETDIR)
-	perl -e 'while (<>) { s%file:///usr/lib/python2.7/dist-packages/landslide/landslide/%%g; print }' <  presentation.html > $(TARGETDIR)presentation.html
+	perl -e 'while (<>) { s%file:///usr/lib/python2.7/dist-packages/landslide/landslide/%%g; s%file:///home/danlyke/code/nodejspresentation/%%g; print }' <  presentation.html > $(TARGETDIR)presentation.html
 
 test :
 	jshint *.js
