@@ -27,6 +27,8 @@ aka JavaScript
 
 ## Why JavaScript sucks ...
 
+"A web app is a website that doesn't work when Javascript is disabled." - Jeremy Keith @adactio
+
 - Bad language features: comparisons, semicolons, ambiguity
 - No typing
 - Blurs content and presentation in horrible ways
@@ -43,6 +45,7 @@ It's already everywhere.
 - Deployed more places than Java
 - Asm.js - VM of the future
 - Security is scary, browsers are everywhere.
+- Customers attracted by blinky lights are very profitable!
 
 ---
 
@@ -174,7 +177,8 @@ HTML:
 &lt;/head&gt;&lt;body&gt;
  &lt;script&gt;
 var it = 2;
-alert("Doubing "+it+" yields " + window.common.doubleIt(2));
+alert("Doubling "+it+" yields "
+   + window.common.doubleIt(2));
 &lt;/script&gt;
 &lt;/body&gt;&lt;/html&gt;</pre>
 
@@ -271,7 +275,8 @@ net.createServer(
 
 <pre>var http = require('http');
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.writeHead(200, 
+    {'Content-Type': 'text/plain'});
   res.end('Hello World\n');
 }).listen(1337, '127.0.0.1');
 </pre>
@@ -283,9 +288,11 @@ http.createServer(function (req, res) {
 
 <pre>var http = require('http');
 
-var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World\n");
+var server = http.createServer(
+  function (request, response) {
+    response.writeHead(200,
+      {"Content-Type": "text/plain"});
+    response.end("Hello World\n");
 });
 server.listen(8000);
 </pre>
@@ -352,7 +359,8 @@ initial page rendering, and then allows JSON thereafter.
 ## So not quite there yet
 
 Other languages have fully-formed frameworks and content management
-systems, Node has some components upon which you can hang an app.
+systems, Node has some components upon which you can hang an app,
+frameworks are still coming together.
 
 ---
 
